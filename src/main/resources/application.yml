@@ -1,1 +1,11 @@
+server:
+  port: 8080
 
+spring:
+  data:
+    rest:
+      basePath: /api
+app:
+  feign:
+    config:
+      url: https://swapi.dev/api/
