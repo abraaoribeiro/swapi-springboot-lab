@@ -1,13 +1,13 @@
 package swapi.springboot.lab.service.interfaces;
 
+import swapi.springboot.lab.model.BaseModel;
 import swapi.springboot.lab.model.PeopleModel;
-import swapi.springboot.lab.model.dto.PeopleModelDTO;
 
 public interface IPeopleService {
 
-    PeopleModel<PeopleModelDTO> findAllPeople();
+    BaseModel<PeopleModel> findAllPeople();
 
-    PeopleModelDTO findAByIdPeople(Long id);
+    PeopleModel findAByIdPeople(Long id);
 
 
 }
